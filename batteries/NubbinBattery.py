@@ -1,5 +1,5 @@
 from abc import ABC
-from BatteryInterface import BatteryInterface
+from batteries.BatteryInterface import BatteryInterface
 
 class NubbinBattery(BatteryInterface, ABC):
     def __init__(self, last_service_date, current_date):
