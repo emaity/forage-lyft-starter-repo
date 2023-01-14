@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Engine(ABC):
+class EngineInterface(ABC):
     @abstractmethod
     def needs_service():
         pass
