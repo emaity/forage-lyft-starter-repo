@@ -3,7 +3,7 @@ from batteries.BatteryInterface import BatteryInterface
 
 class SpindlerBattery(BatteryInterface, ABC):
     def __init__(self, last_service_date, current_date):
-        self.years_to_replace = 2
+        self.years_to_replace = 3
         self.service_threshold_date = last_service_date.replace(year=last_service_date.year + self.years_to_replace)
         self.current_date = current_date
     
